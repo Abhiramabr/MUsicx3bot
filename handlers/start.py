@@ -9,22 +9,17 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b> Hi {message.from_user.first_name}!</b>
-I am an open-source bot that lets you play music in your Telegram groups.
-Use /help to know more about me.""",
+        f"""<b>Hey {message.from_user.first_name}!</b>
+I can play music in your Telegram's voice chat!
+Use the buttons below to know more about how to use me.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💠Source💠", url="https://github.com/No-OnE-Kn0wS-Me/MusicPlayer-Heroku"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/movielinks_only"
+                        "📞 Contact", url="https://t.me/T_r_oy"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔈", url="https://t.me/Mai_bOTs"
+                        "🛸 Channel", url="https://t.me/Wandabetaxbot"
                     )
                 ]
             ]
@@ -39,7 +34,7 @@ Use /help to know more about me.""",
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "<b>Click The Yes Button For Searching a Video</b>",
+        "💁🏻‍♂️ Do you want to search for a YouTube video?",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
