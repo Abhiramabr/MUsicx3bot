@@ -8,7 +8,7 @@ RUN apt-get update -y && \
         git \
         ffmpeg && \
     git clone https://github.com/Abhiramabr/Musicx3bot.git && \
-    cd Musicx3bot && \
+    cd MusicBot && \
     git clone https://github.com/pytgcalls/pytgcalls.git && \
     cd pytgcalls && \
     npm install && \
@@ -17,9 +17,9 @@ RUN apt-get update -y && \
     npm install && \
     cd ../../ && \
     pip3 install -r requirements.txt && \
-    cp -r ./pytgcalls /Musicx3bot/ && \
-    cd /Musicx3bot && \
+    cp -r ./pytgcalls /MusicBot/ && \
+    cd /MusicBot && \
     pip3 install -U -r requirements.txt
 
-WORKDIR /Musicx3bot
+WORKDIR /MusicBot
 CMD ["python3" "main.py"]
