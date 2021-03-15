@@ -21,5 +21,5 @@ RUN apt-get update -y && \
     cd /Musicx3bot && \
     pip3 install -U -r requirements.txt
 
-WORKDIR /MusicBot
+WORKDIR /Musicx3bot
 CMD ["python3" "main.py"]
